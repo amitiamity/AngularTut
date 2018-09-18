@@ -9,6 +9,7 @@ import {StarComponent} from './shared/star.component';
 import {HttpClientModule} from '@angular/common/http';
 import {ProductDetailComponent} from './products/product-detail.component';
 import {RouterModule} from '@angular/router';
+import {WelcomeComponent} from './welcome/welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -16,16 +17,19 @@ import {RouterModule} from '@angular/router';
     ProductListComponent,
     ConvertToSpacesPipe,
     StarComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
     RouterModule.forRoot([
-      {path:'products',component:ProductListComponent},
-      {path:'products/:id', component: ProductDetailComponent},
-    //  {path:'welcome', component: WelcomeComponent}
+      {path: '', redirectTo: 'welcome', pathMatch: 'full'},
+      {path: 'products', component: ProductListComponent},
+      {path: 'products/:id', component: ProductDetailComponent},
+      {path: 'welcome', component: WelcomeComponent},
+      {path: '**', redirectTo: 'welcome', pathMatch : 'full'}
     ])
   ],
   providers: [],

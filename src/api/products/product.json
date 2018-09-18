@@ -1,0 +1,22 @@
+[
+        {
+          "productId": 2,
+          "productName": "Garden Cart",
+          "productCode": "GDN-0023",
+          "releaseDate": "March 18,2016",
+         "description": "15 gallon capacity",
+          "price": 32.99,
+          "starRating": 4.2,
+          "imageURL": "https://via.placeholder.com/350x150"
+        },
+        {
+          "productId": 3,
+          "productName": "Lawn Cart",
+          "productCode": "LWN-0023",
+          "releaseDate": "January 18,2016",
+          "description": "10 gallon capacity",
+          "price": 22.99,
+          "starRating": 3.2,
+          "imageURL": "https://via.placeholder.com/350x150"
+        }
+]

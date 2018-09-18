@@ -9,7 +9,7 @@ import {catchError, tap} from 'rxjs/operators';
   providedIn: 'root'
 })
 export class ProductService {
-  private productURL = "http://localhost:/8080/";
+  private productURL = 'api/products/product.json'; //we should give the Backend serviceURL
 
   constructor(private http: HttpClient) {}
 
